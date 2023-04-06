@@ -1,0 +1,68 @@
+{
+  "name": "walruship/laratrust",
+  "description": "Fully-featured authentication & authorization system.",
+  "authors": [
+    {
+      "name": "Walruship Co., Ltd",
+      "email": "contact@walruship.com",
+      "homepage": "https://walruship.com"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0",
+    "walruship/support": "^10.0"
+  },
+  "require-dev": {
+    "illuminate/cookie": "^10.0",
+    "illuminate/database": "^10.0",
+    "illuminate/events": "^10.0",
+    "illuminate/http": "^10.0",
+    "illuminate/session": "^10.0",
+    "mockery/mockery": "^1.5",
+    "phpunit/phpunit": "^10.0",
+    "walruship/php-cs-fixer": "^3.0"
+  },
+  "suggest": {
+    "illuminate/database": "By default, Sentinel utilizes the powerful Illuminate database layer.",
+    "illuminate/events": "To hook into various events across Sentinel, we recommend using Illuminate's event dispatcher.",
+    "symfony/http-foundation": "Required for native implementations."
+  },
+  "autoload": {
+    "psr-4": {
+      "Walruship\\Laratrust\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Walruship\\Laratrust\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "component": "package",
+    "branch-alias": {
+      "dev-master": "10.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Walruship\\Laratrust\\Laravel\\SentinelServiceProvider"
+      ],
+      "aliases": {
+        "Activation": "Walruship\\Laratrust\\Laravel\\Facades\\Activation",
+        "Reminder": "Walruship\\Laratrust\\Laravel\\Facades\\Reminder",
+        "Sentinel": "Walruship\\Laratrust\\Laravel\\Facades\\Sentinel"
+      }
+    }
+  },
+  "scripts": {
+    "cs:check": "./vendor/bin/php-cs-fixer fix --verbose --ansi --show-progress=dots --diff --dry-run",
+    "cs:fix": "./vendor/bin/php-cs-fixer fix --verbose --ansi --show-progress=dots",
+    "test": "./vendor/bin/phpunit --verbose --colors=always"
+  }
+}
