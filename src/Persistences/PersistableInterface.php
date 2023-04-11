@@ -61,5 +61,5 @@ interface PersistableInterface
      *
      * @return string
      */
-    public function generatePersistenceCode(): string;
+    public function generatePersistenceCode();
 }

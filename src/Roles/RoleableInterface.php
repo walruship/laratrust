@@ -22,7 +22,7 @@ interface RoleableInterface
      *
      * @return \IteratorAggregate
      */
-    public function getRoles(): \IteratorAggregate;
+    public function getRoles();
 
     /**
      * Checks if the user is in the given role.
