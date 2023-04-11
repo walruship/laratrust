@@ -25,8 +25,8 @@
     "walruship/php-cs-fixer": "^3.0"
   },
   "suggest": {
-    "illuminate/database": "By default, Sentinel utilizes the powerful Illuminate database layer.",
-    "illuminate/events": "To hook into various events across Sentinel, we recommend using Illuminate's event dispatcher.",
+    "illuminate/database": "By default, Laratrust utilizes the powerful Illuminate database layer.",
+    "illuminate/events": "To hook into various events across Laratrust, we recommend using Illuminate's event dispatcher.",
     "symfony/http-foundation": "Required for native implementations."
   },
   "autoload": {
@@ -51,12 +51,12 @@
     },
     "laravel": {
       "providers": [
-        "Walruship\\Laratrust\\Laravel\\SentinelServiceProvider"
+        "Walruship\\Laratrust\\Laravel\\LaratrustServiceProvider"
       ],
       "aliases": {
         "Activation": "Walruship\\Laratrust\\Laravel\\Facades\\Activation",
         "Reminder": "Walruship\\Laratrust\\Laravel\\Facades\\Reminder",
-        "Sentinel": "Walruship\\Laratrust\\Laravel\\Facades\\Sentinel"
+        "Laratrust": "Walruship\\Laratrust\\Laravel\\Facades\\Laratrust"
       }
     }
   },

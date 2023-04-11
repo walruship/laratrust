@@ -46,7 +46,7 @@ class Laratrust
             $bootstrapper = new LaratrustBootstrapper();
         }
 
-        $this->sentinel = $bootstrapper->createLaratrust();
+        $this->laratrust = $bootstrapper->createLaratrust();
     }
 
     /**

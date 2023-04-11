@@ -63,7 +63,7 @@ class LaratrustBootstrapper
     }
 
     /**
-     * Creates a sentinel instance.
+     * Creates a laratrust instance.
      *
      * @return \Walruship\Laratrust\Laratrust
      */
@@ -75,7 +75,7 @@ class LaratrustBootstrapper
         $activations = $this->createActivations();
         $dispatcher  = $this->getEventDispatcher();
 
-        $sentinel = new Laratrust(
+        $laratrust = new Laratrust(
             $persistence,
             $users,
             $roles,
@@ -90,18 +90,18 @@ class LaratrustBootstrapper
         $checkpoints = $this->createCheckpoints($activations, $throttle, $ipAddress);
 
         foreach ($checkpoints as $key => $checkpoint) {
-            $sentinel->addCheckpoint($key, $checkpoint);
+            $laratrust->addCheckpoint($key, $checkpoint);
         }
 
         $reminders = $this->createReminders($users);
 
-        $sentinel->setActivationRepository($activations);
+        $laratrust->setActivationRepository($activations);
 
-        $sentinel->setReminderRepository($reminders);
+        $laratrust->setReminderRepository($reminders);
 
-        $sentinel->setThrottleRepository($throttle);
+        $laratrust->setThrottleRepository($throttle);
 
-        return $sentinel;
+        return $laratrust;
     }
 
     /**

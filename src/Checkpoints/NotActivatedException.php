@@ -37,7 +37,7 @@ class NotActivatedException extends \RuntimeException
     }
 
     /**
-     * Sets the user associated with Sentinel (does not log in).
+     * Sets the user associated with Laratrust (does not log in).
      *
      * @param \Walruship\Laratrust\Users\UserInterface $user
      *

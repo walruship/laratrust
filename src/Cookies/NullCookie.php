@@ -18,7 +18,7 @@ namespace Walruship\Laratrust\Cookies;
 class NullCookie implements CookieInterface
 {
     /**
-     * Put a value in the Sentinel cookie (to be stored until it's cleared).
+     * Put a value in the Laratrust cookie (to be stored until it's cleared).
      *
      * @param mixed $value
      *
@@ -29,7 +29,7 @@ class NullCookie implements CookieInterface
     }
 
     /**
-     * Returns the Sentinel cookie value.
+     * Returns the Laratrust cookie value.
      *
      * @return mixed
      */
@@ -39,7 +39,7 @@ class NullCookie implements CookieInterface
     }
 
     /**
-     * Remove the Sentinel cookie.
+     * Remove the Laratrust cookie.
      *
      * @return void
      */
