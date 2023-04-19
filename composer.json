@@ -39,10 +39,10 @@
       "Walruship\\Laratrust\\Tests\\": "tests/"
     }
   },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true
+  "scripts": {
+    "cs:check": "./vendor/bin/php-cs-fixer fix --verbose --ansi --show-progress=dots --diff --dry-run",
+    "cs:fix": "./vendor/bin/php-cs-fixer fix --verbose --ansi --show-progress=dots",
+    "test": "./vendor/bin/phpunit --verbose --colors=always"
   },
   "extra": {
     "component": "package",
@@ -60,9 +60,11 @@
       }
     }
   },
-  "scripts": {
-    "cs:check": "./vendor/bin/php-cs-fixer fix --verbose --ansi --show-progress=dots --diff --dry-run",
-    "cs:fix": "./vendor/bin/php-cs-fixer fix --verbose --ansi --show-progress=dots",
-    "test": "./vendor/bin/phpunit --verbose --colors=always"
-  }
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
