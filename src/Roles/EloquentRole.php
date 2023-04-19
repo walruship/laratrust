@@ -77,7 +77,7 @@ class EloquentRole extends Model implements PermissibleInterface, RoleInterface
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function users(): BelongsToMany
+    public function users()
     {
         return $this->belongsToMany(static::$usersModel, 'role_users', 'role_id', 'user_id')->withTimestamps();
     }
