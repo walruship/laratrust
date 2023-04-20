@@ -158,7 +158,7 @@ class EloquentUser extends Model implements PermissibleInterface, PersistableInt
      */
     public function roles()
     {
-        return $this->belongsToMany(static::$rolesModel, 'role_users', 'user_id', 'role_id')->withTimestamps();
+        return $this->belongsToMany(static::$rolesModel, 'role_users', 'user_id', 'role_id');
     }
 
     /**

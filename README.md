@@ -19,11 +19,11 @@ Using the package, but you're stuck? Found a bug? Have a question or suggestion 
 
 ## Security
 
-If you discover any security related issues, please email contact@walruship.com instead of using the issue tracker.
+If you discover any security related issues, please email info@walruship.com instead of using the issue tracker.
 
 ## License
 
-This software is released under the [BSD 3-Clause](LICENSE) License. Please see the [LICENSE](LICENSE) file or https://walruship.com/LICENSE.txt for more information.
+This software is released under the [BSD 3-Clause][link-license] License. Please see the [LICENSE](LICENSE) file or https://walruship.com/LICENSE.txt for more information.
 
 [link-docs]:      https://walruship.com
 [link-travis]:    https://walruship.com
