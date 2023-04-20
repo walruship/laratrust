@@ -40,7 +40,7 @@ class ConfigRepository implements \ArrayAccess
      */
     public function __construct($file = null)
     {
-        $this->file = $file ?: __DIR__.'/../config/config.php';
+        $this->file = $file ?: __DIR__.'/../config/laratrust.php';
 
         $this->load();
     }

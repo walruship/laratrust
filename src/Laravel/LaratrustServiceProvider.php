@@ -64,7 +64,7 @@ class LaratrustServiceProvider extends ServiceProvider
     protected function prepareResources()
     {
         // Publish config
-        $config = realpath(__DIR__.'/../config/config.php');
+        $config = realpath(__DIR__.'/../config/laratrust.php');
 
         $this->mergeConfigFrom($config, 'walruship.laratrust');
 

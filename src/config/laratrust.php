@@ -23,7 +23,7 @@ return [
     |
     */
 
-    'session' => 'Walruship_laratrust',
+    'session' => 'walruship_laratrust',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     |
     */
 
-    'cookie' => 'Walruship_laratrust',
+    'cookie' => 'walruship_laratrust',
 
     /*
     |--------------------------------------------------------------------------
